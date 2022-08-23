@@ -12,8 +12,13 @@ instructions:
 3.run your registry file with exported CRU EDID override (i have my example registry uploaded)
 4.restart64.exe (check DefaultSettings.DriverExtra located in the HKLM\SYSTEM\CurrentControlSet\Hardware Profiles\UnitedVideo\CONTROL\VIDEO\ to make sure it has the scaling set to 02)
 
+
 what the registry file does:
+
 1.deletes the default EDID
+
 2.adds the CRU EDID changes shown in the image to the registry
+
 3.changes scaling=2 (no scaling)
+
 4.deletes the unitedvideo (so it can refetch the data like scaling when u restart64 on cru or turn off then on monitor)
