@@ -3,11 +3,8 @@ monitor registry files for 1920x1080 no scaling (scaling=2)
 
 instructions: 
 1.reset-all.exe
-2.restart64.exe
-<details>
-  <summary>(you have to do this before running registry file otherwise it does weird stuff im not sure about you can try doing it after to see how it feels) (reason being reset-all.exe delets graphicsdriver contents and EDID content, and other places in registry fetch data from there, if you dont restart64 and instead try to update edid i am not sure what happens i need to learn more)
-  </summary>
-</details>
+2.restart64.exe<details>(you have to do this before running registry file otherwise it does weird stuff im not sure about you can try doing it after to see how it feels) (reason being reset-all.exe delets graphicsdriver contents and EDID content, and other places in registry fetch data from there, if you dont restart64 and instead try to update edid i am not sure what happens i need to learn more)
+  </details>
 2.run your registry file with exported CRU EDID override (i have my example registry uploaded)
 3.restart64.exe (check DefaultSettings.DriverExtra located in the HKLM\SYSTEM\CurrentControlSet\Hardware Profiles\UnitedVideo\CONTROL\VIDEO\ to make sure it has the scaling set to 02)
 
